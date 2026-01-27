@@ -1,0 +1,35 @@
+public class main {
+	public static void main(String[] args) {
+
+// First program with Java with print and println fonction 
+		System.out.println("hello word ! it is my first program with java");
+		
+// 2ed program : Variables in Java
+		
+		/* in Java there is :
+				  
+		  * int: to store integers number such as -1, 0, 1,2,...
+		  * double / float to store floating point number : 1.5, ....
+		  * char: for single character : "a", "A",...
+		  * string: for text : " hafid" ...
+		  * boolean: for True or False 
+		 */
+				
+		// Exemple
+				String Nom="hafid";
+				int Age=20;
+				double Note=17.5;
+				String Matiere ="Math";
+				char grade='A';
+				
+		//Affichage
+				System.out.print("je suis "+ Nom +"\n");
+				System.out.print("j'ai " + Age + "ans ");
+				System.out.print("et j'ai une note de  "+ Note);
+				System.out.println("dans le " + Matiere );
+				System.out.println("Don j'ai un grade "+ grade);
+				
+
+	}
+
+}
