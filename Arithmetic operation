@@ -1,0 +1,26 @@
+package newPackage;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// Arithmetic operation
+		
+		int a=12;
+		double b=3;
+		double Add=a+b;  // Addition
+		double S=a-b;   // soustraction
+		double D=a/b; // division
+		double M=a*b; // multiplication
+		double Mod=a%b; // modulo, le reste de division de a sur b
+		
+		//Affichage
+		System.out.println("la somme de a et b est S= "+Add);
+		System.out.println("la soustraction de a - b est Sous= "+S);
+		System.out.println("la division de a sur b est D= "+D);
+		System.out.println("la multiplication de a * b est M= "+M);
+		System.out.println("la reste de division de a sur b est Mod= "+Mod);
+		
+		
+}
+
+}
