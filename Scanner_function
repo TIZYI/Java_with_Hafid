@@ -1,0 +1,26 @@
+package newPackage;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner= new Scanner(System.in);
+						
+				/* saisie les informations avec la fonction Scanner 
+				 * Au debut il faut importer le package Scanner avec  
+				 * " import java.util.Scanner;"
+				 * puis dans public static void man, il faut ajoute:
+				 * Scanner scanner= new Scanner(System.in)
+				*/
+				//Exemples:
+						System.out.println("Enter your Name");
+						String name=scanner.nextLine();
+						System.out.println("Enter your Age");
+						int age=scanner.nextInt();
+						String grade=scanner.nextLine();
+						System.out.println("Hello "+name);
+						System.out.println("You have "+age+" years old");
+					
+	scanner.close();
+}
+
+}
