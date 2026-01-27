@@ -11,7 +11,7 @@ public class Main {
 				 * puis dans public static void man, il faut ajoute:
 				 * Scanner scanner= new Scanner(System.in)
 				*/
-				//Exemples:
+				//Exemple 1:
 						System.out.println("Enter your Name");
 						String name=scanner.nextLine();
 						System.out.println("Enter your Age");
@@ -19,6 +19,13 @@ public class Main {
 						String grade=scanner.nextLine();
 						System.out.println("Hello "+name);
 						System.out.println("You have "+age+" years old");
+				//Exemple 2: calculate Area of rectangle
+						System.out.println("Enter the Width ");
+						double width=scanner.nextDouble();
+						System.out.println("Enter the Height");
+						double height= scanner.nextDouble();
+						double area=width*height;
+						System.out.print("the Area of this rectangle is "+area+" mm^^2");
 					
 	scanner.close();
 }
