@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// Arithmetic operation
+// Arithmetic operation
 		
 		int a=12;
 		double b=3;
@@ -20,13 +20,18 @@ public class Main {
 		System.out.println("la multiplication de a * b est M= "+M);
 		System.out.println("la reste de division de a sur b est Mod= "+Mod);
 		
-		// abreviation 
+// abreviation 
 		a+=b;  // a=a+b
 		System.out.println(a);
 		a*=b; // a=a*b
 		System.out.println(a);
 		a/=b; //a=a/b
 		System.out.println(a);
+// increment and decrement operation 
+		a+=1; // a=a+1 or a++
+		a++;
+		System.out.println(a);
+		b-=1; // b=b-1 or b--
 }
 
 }
