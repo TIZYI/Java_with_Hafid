@@ -20,7 +20,13 @@ public class Main {
 		System.out.println("la multiplication de a * b est M= "+M);
 		System.out.println("la reste de division de a sur b est Mod= "+Mod);
 		
-		
+		// abreviation 
+		a+=b;  // a=a+b
+		System.out.println(a);
+		a*=b; // a=a*b
+		System.out.println(a);
+		a/=b; //a=a/b
+		System.out.println(a);
 }
 
 }
