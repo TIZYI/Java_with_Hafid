@@ -1,0 +1,30 @@
+package newPackage;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		
+		// if statement, condition if and if ....else ....... 
+		
+		/* syntaxe :
+		 * if (condition){
+		 * 		The instructions to execute if the condition is true.			
+		 * 		}
+		 * else{
+		 * 		The instructions to execute if the condition is false
+		 * 		}
+		 */
+	// Exemple:
+		System.out.print(" what is your age ?");
+		double age=scanner.nextDouble();
+		if(age>=18) {
+			System.out.println("you are an adult ");
+		}
+		else {
+			System.out.println("you are a child ");
+		}
+scanner.close();		
+}
+
+}
