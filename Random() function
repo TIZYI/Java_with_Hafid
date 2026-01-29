@@ -1,0 +1,28 @@
+package newPackage;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		
+		/*
+		 * 1- Random() is a function that generates a random number.
+		 * 2- Random(a,b+1) is a function that generates a random number between a and b.
+		 * 3- double number=random() generetes a random number between 0 and 1
+		 */
+	// Exemple 1
+		int number1;
+		number1=random.nextInt();
+		System.out.println("random(int)= "+number1);
+	// Exemple 2
+		int number2;
+		number2=random.nextInt(2,4);
+		System.out.println("random(2,4)= "+number2);
+	// Exemple 3
+		double number3;
+		number3=random.nextDouble();
+		System.out.println("random(double)= "+number3);
+		
+}
+
+}
