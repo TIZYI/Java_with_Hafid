@@ -21,6 +21,9 @@ public class Main {
 		if(age>=18) {
 			System.out.println("you are an adult ");
 		}
+		else if(age<0) {
+			System.out.println("you haven't born yet ");
+		}
 		else {
 			System.out.println("you are a child ");
 		}
