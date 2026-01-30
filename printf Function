@@ -22,7 +22,7 @@ public class Main {
 		System.out.printf("your age is %d \n", age);
 		System.out.printf("your grade in Math is %c \n", grade);
 		System.out.printf("your height is  %f", height);
-
+		System.out.printf("Are you student ? %b",IsStudent);
 }
 
 }
