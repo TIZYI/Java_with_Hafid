@@ -3,16 +3,24 @@ import java.util.Random;
 public class Main {
 
 	public static void main(String[] args) {
-		/* utilisation de la fonction printf()
+	// Utilisation de la fonction printf()
+		/* 
 		 * printf sert a afficher du texte formaté
-		 * Syntaxe: System.out.printf("format", valeurs);
-		 * 	// type de format: 
-		 * 	%d	entier (int)
-			%f	réel (float / double)
-			%s	chaîne de caractères
-			%c	caractère
+		  			Syntaxe: System.out.printf("format", valeurs);
+		 * Syntaxe format:
+			 * %[flags][with][.precision][specifier-character]
+			 * flags
+			 	+ = output a plus
+			 	, = comma grouping separator
+			 	( = negative number are in closed in ()
+			 	space= for display a minus if negative, and space if positive
+		 * 	specifier-character: 
+			  	%d	= entier (int)
+				%f	= réel (float / double)
+				%s	= chaîne de caractères
+				%c	= caractère
 		 */
-		// Exemples:
+		// Exemples 1:
 		String name="hafid";
 		int age= 20;
 		char grade= 'A';
@@ -21,8 +29,17 @@ public class Main {
 		System.out.printf("Hello Mr %s \n", name);
 		System.out.printf("your age is %d \n", age);
 		System.out.printf("your grade in Math is %c \n", grade);
-		System.out.printf("your height is  %f", height);
+		System.out.printf("your height is  %.1f", height);       // pour %.nf est pour n nombre apres la virgule
 		System.out.printf("Are you student ? %b",IsStudent);
+	System.out.printf("Hello Mr %s , your name start with %c, your grade in Math is %c, and your hieght is %f", name, FirstL,grade,height);
+
+// Exemples 2:
+		double n1=999.99;
+		double n2=-22.22;
+		double n3= 9.9;
+		System.out.printf("%+.2f\n", n1);
+		System.out.printf("%+.2f\n", n2);
+		System.out.printf("%+.2f\n", n3);
 }
 
 }
