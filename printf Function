@@ -1,0 +1,28 @@
+package newPackage;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) {
+		/* utilisation de la fonction printf()
+		 * printf sert a afficher du texte formaté
+		 * Syntaxe: System.out.printf("format", valeurs);
+		 * 	// type de format: 
+		 * 	%d	entier (int)
+			%f	réel (float / double)
+			%s	chaîne de caractères
+			%c	caractère
+		 */
+		// Exemples:
+		String name="hafid";
+		int age= 20;
+		char grade= 'A';
+		double height= 82.5;
+		boolean IsStudent= false;
+		System.out.printf("Hello Mr %s \n", name);
+		System.out.printf("your age is %d \n", age);
+		System.out.printf("your grade in Math is %c \n", grade);
+		System.out.printf("your height is  %f", height);
+
+}
+
+}
