@@ -1,0 +1,26 @@
+package newPackage;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println(Math.PI);
+		System.out.print(Math.E);
+		
+		POWER=Math.pow(3, 2);  // la puissance de deux nombres(3^2)
+		abs=Math.abs(-5);	// la valeur absolut 
+		Sqrt=Math.sqrt(12);  // la fonction racine 
+		Round=Math.round(1.4);  /* la fonction round (arrondir)
+									- valeur apres virgule >= 0.5 arrondi vers le haut
+									- valeur apres virgule < 0.5 arrondi vers le bat
+								*/
+		RvH=Math.ceil(9,99);  // Arrondi vers le haut
+		RvB=Math.floor(3,99); // Arrondi vers le bas 
+		Max=Math.max(2, 10);  // max entre deux valeur a et b (a,b)
+		
+		
+		
+		
+
+}
+
+}
