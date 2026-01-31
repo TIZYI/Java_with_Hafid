@@ -1,0 +1,27 @@
+package newPackage;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Exemple de fonctions utilise en Java
+		
+		String name="Hafid tazi";
+		int lengh=name.length(); // length(): pour calcule la longeur de la phrase 
+		//System.out.print(lengh);
+		
+		char Flettre=name.charAt(1); // charAt(i) pour afficher la lettre d'ordre i
+		//System.out.print(Flettre);
+				
+		int index=name.indexOf("i"); // indexof("lettre") pour afficher l'emplacement de la lettre
+		//System.out.print(index);
+		
+		name=name.toUpperCase();	// pour Maj
+		name=name.toLowerCase();	// pour Min
+		name=name.trim();			// trim(): pour effacer les espaces avant et apres une phrase
+		name=name.replace("i", "a"); // replace(L1,L2): pour remplacer la lettre L1 par L2
+		
+		boolean empty=name.isEmpty(); // pour tester est ce que name est vide
+		System.out.print(empty);
+}
+
+}
