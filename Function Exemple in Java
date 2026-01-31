@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// Exemple de fonctions utilise en Java
-		
+		// Exemple 1:
 		String name="Hafid tazi";
 		int lengh=name.length(); // length(): pour calcule la longeur de la phrase 
 		//System.out.print(lengh);
@@ -22,6 +22,15 @@ public class Main {
 		
 		boolean empty=name.isEmpty(); // pour tester est ce que name est vide
 		System.out.print(empty);
+		// Exemple 2:
+		/*   Substring method in Java: methode utilise pour extraire une partie d'un texte
+		 	Syntax: Subtring(start, end)
+		*/
+		String email="hafidtazi@gmail.com";
+		String name=email.substring(0,email.indexOf("@"));
+		System.out.println(name);
+		String domain= email.substring(email.indexOf("@")+1);
+		System.out.print(domain);
 }
 
 }
