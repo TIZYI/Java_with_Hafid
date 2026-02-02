@@ -1,0 +1,22 @@
+package newPackage;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		// ternay operator ? :
+		// Syntaxe: varaible=(condition) ? isTrue : isFalse;
+		
+		// Exemple nombre pair et impair
+		System.out.print("Entrer un nombre ");
+		int a=scanner.nextInt();
+		String EorO=(a%2==0)? "pair" : "impair";
+		System.out.print("le nombre saisi est "+EorO);
+		
+		
+		scanner.close();
+}
+
+}
