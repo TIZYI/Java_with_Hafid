@@ -1,0 +1,34 @@
+package newPackage;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		// switch = to replace many else if statements
+		
+		//Exemple 1:
+		String day;
+		System.out.print("Entre the day of the week ");
+		day=scanner.nextLine();
+		switch(day) {
+		case"Monday" -> System.out.print("it is a weekday");
+		case"tuesday" -> System.out.print("it is a weekday");
+		case"Wednesday" -> System.out.print("it is a weekday");
+		case"Thursday" -> System.out.print("it is a weekday");
+		case"Friday" -> System.out.print("it is a weekday");
+		case"Saturday" -> System.out.print("it is the weekend");
+		case"Sunday" -> System.out.print("it is the weekend");
+		default -> System.out.print(day + " it is not a day");
+		}
+// 2em Methode :
+		switch(day) {
+		case"Monday" ,"tuesday","Wednesday","Thursday","Friday" -> System.out.println("it is a weekday");
+		case"Saturday","Sunday" -> System.out.print("it is the weekend");
+		default -> System.out.println(day + " it is not a day");
+		}
+		scanner.close();
+}
+
+}
