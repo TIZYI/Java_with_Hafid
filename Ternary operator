@@ -6,7 +6,7 @@ public class Main {
 		
 		Scanner scanner=new Scanner(System.in);
 		
-		// ternay operator ? :
+		// ternary operator ? :
 		// Syntaxe: varaible=(condition) ? isTrue : isFalse;
 		
 		// Exemple nombre pair et impair
