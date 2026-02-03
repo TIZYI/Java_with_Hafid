@@ -1,0 +1,24 @@
+package newPackage;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		// While loop in Java 
+		double num=-1;
+		double racine;
+		// Exemple
+		while(num<0) {
+		System.out.print("Saisie un nombre positive ");
+		num=scanner.nextDouble();
+		}
+		racine=Math.sqrt(num);
+		System.out.printf("le racine de %.1f est %.1f",num,racine);
+		
+		 		
+		scanner.close();
+}
+
+}
