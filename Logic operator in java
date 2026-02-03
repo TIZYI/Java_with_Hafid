@@ -1,0 +1,46 @@
+package newPackage;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		// Logic operator in java 
+		// && : for AND
+		// || : for OR
+		// !  : for not
+		double note;
+		String day;
+		// Exemple 1 AND:
+		 
+		/* System.out.print("Entre la note de l'eleve ");
+		 note=scanner.nextDouble();
+		 if(note<10 && note>=7) {
+			 System.out.println("Rattrapage");
+		 }
+		 else if(note>=10){
+			 System.out.println("Admis");
+		 }
+		 else { 
+			 System.out.println("Ajourné ");
+		 }
+		 */
+		// Exemple 2 or:
+		
+		 System.out.print("Entre the day ");
+		 day=scanner.nextLine();
+		 if (day.equals("Monday") || day.equals("Tuesday") || day.equals("Wednesday") || day.equals("Thursday") || day.equals("Friday")) {
+			 System.out.print("the day is weekday ");
+		 		}
+		 else if(day.equals("Saturday") || day.equals("Sunday")) {
+			 System.out.print("the day is weekend ");
+		 		}
+		 else {
+			 System.out.print("Invalid day ");
+		 		}
+		 		
+		scanner.close();
+}
+
+}
