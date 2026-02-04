@@ -1,0 +1,37 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		Scanner scanner=new Scanner(System.in);
+		
+		// Do While Loop exemple: Number Guessing Game
+		
+		int Rnum;
+		int Gnum;
+		int attempts=0;
+		Rnum=random.nextInt(1,11);
+		System.out.println(" THIS IS NUMBER GUSSING GAME, WELCOMME ");
+		System.out.println(" Gess a number between 1 to 10 ");
+		
+		do {
+			System.out.print(" Enter a Gess Number: ");
+			Gnum=scanner.nextInt();
+			attempts++;
+			if(Gnum < Rnum) {
+				System.out.println("TOO LOW! Tray again");
+			}
+			else {
+				System.out.println("TOO HIGH! Tray again");
+			}
+		}while(Gnum != Rnum);
+		System.out.println("Correct the number is "+Gnum);
+		System.out.print("number of attempts: "+attempts);
+		
+		
+		scanner.close();
+}
+
+}
