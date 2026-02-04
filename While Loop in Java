@@ -16,7 +16,14 @@ public class Main {
 		}
 		racine=Math.sqrt(num);
 		System.out.printf("le racine de %.1f est %.1f",num,racine);
-		
+		 //Exemple 2:
+		String resp="";
+		while(!resp.equals("Q")) {
+			System.out.println("you are playing a game");
+			System.out.print("Press Q to quit ");
+			resp=scanner.nextLine().toUpperCase();
+		}
+		System.out.print("you have quit the game");
 		 		
 		scanner.close();
 }
