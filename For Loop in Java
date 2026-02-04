@@ -1,0 +1,26 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		Scanner scanner=new Scanner(System.in);
+		
+		// For loop 
+		
+		//Exemple: table de multiplication d'un nombre
+		
+		int a;
+		int i;
+		System.out.print("Entre un nombre ");
+		a=scanner.nextInt();
+		System.out.println("Table de multiplication de "+a);
+		for(i=1;i<10;i++) {
+			System.out.printf("%d * %d = %d \n", a,i,a*i);
+		}
+		
+		scanner.close();
+}
+
+}
