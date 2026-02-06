@@ -1,0 +1,38 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		// method = it is a block of reusable code that is executed when called it
+		
+		//Exemple 2:
+		double a,b,Add;
+		System.out.print("Enter the first number ");
+		a=scanner.nextDouble();
+		System.out.print("Enter the second number ");
+		b=scanner.nextDouble();
+		Add=addition(a,b);
+		System.out.printf("la somme est %.1f\n",Add);
+		Add=square(a);
+		System.out.printf("le carre de %.1f est %.1f\n",a,Add);
+		Add=cube(a);
+		System.out.printf("le cube de %.1f est %.1f\n",a,Add);
+}
+	static double addition(double a , double b) {
+		double s=a+b;
+		return s;
+	}
+	static double square(double a ) {
+		double s=a*a;
+		return s;
+	}
+	static double cube(double a) {
+		double s=a*a*a;
+		return s;
+	}
+
+}
