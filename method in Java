@@ -1,0 +1,24 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		// method = it is a block of reusable code that is executed when called it
+		
+		//Exemple:
+		String name="alli";
+		int age=20;
+		information(name,age);
+}
+	static void information(String name,int age) {
+		System.out.println("Welcome to the Java formation ");
+		System.out.println("Your name is "+name);
+		System.out.print("Your age is "+age+ "years old");
+		
+	}
+
+}
