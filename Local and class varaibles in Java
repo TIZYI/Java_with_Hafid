@@ -1,0 +1,23 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+		static int a=222; // class variable
+	public static void main(String[] args) throws InterruptedException {
+		
+		
+		
+		// Local and class varaibles 
+		// Exemple: 
+		//int a=12;  // Local varaible
+		System.out.println(a);
+		
+		LocalClassVariable();
+	}
+	static void LocalClassVariable() {
+		//int a =33;   // local varaible 
+		System.out.print(a);
+	}
+
+
+}
