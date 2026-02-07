@@ -1,0 +1,70 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+		// Java banking program 
+	static Scanner scanner=new Scanner(System.in);
+	public static void main(String[] args) throws InterruptedException {
+		
+		// Varaible declaration 
+		double Balance=0;
+		boolean isRuning=true;
+		int choice=0;
+		
+		// 
+		while(isRuning) {
+		System.out.println("***************************");
+		System.out.println("BANKING PROGRAM ");
+		System.out.println("***************************");
+		System.out.println("1. SHOW BALNCE ");
+		System.out.println("2. DEPOSIT ");
+		System.out.println("3. WITHDRAW ");
+		System.out.println("4. EXIT ");
+		System.out.println("***************************");
+		System.out.print("Enter your choice: ");
+		choice=scanner.nextInt();
+		switch(choice) {
+		case 1 -> showbalance(Balance);
+		case 2 -> Balance += deposit();
+		case 3 -> Balance -=withdraw(Balance);
+		case 4 -> isRuning=false;
+		default -> System.out.print("INVALID CHOICE ");
+		}
+	}
+		System.out.println("***************************");
+		System.out.println("THANK YOU FOR YOUR VISIT, HAVE A NICE DAY ");
+		System.out.println("***************************");
+			
+}
+	static void showbalance(double Balance) {
+		System.out.println("*******************");
+		System.out.printf("$%.2f\n",Balance);}
+	static double deposit() {
+		System.out.print("Enter an amount to be deposited: ");
+		double amount=scanner.nextDouble();
+		if(amount<0) {
+			System.out.print(" Amount can't be negative");
+			return 0;
+		}
+		else {
+			
+			return amount; 
+		}
+	}
+	static double withdraw(double Balance) {
+		System.out.println("Enter amount to be withdraw: ");
+		double amount=scanner.nextDouble();
+		if(amount>Balance) {
+			System.out.println("Insufficient funds !");
+			return 0;
+		}
+		else if(amount<0) {
+			System.out.println("Amount can't be negative !");
+			return 0;
+		}
+		else {
+			return amount;
+		}
+	}
+	
+}
