@@ -1,0 +1,104 @@
+package newPackage;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+		
+	static Scanner scanner=new Scanner(System.in);
+	public static void main(String[] args) throws InterruptedException {
+		
+		// DICE ROLLER PROGRAM with JAVA
+		Random random=new Random();
+		// Declare variables :
+			int NumOfDice;
+			int total=0;
+		// Get the number of Dice from the user
+			System.out.print("Enter the number of dice: ");
+			NumOfDice=scanner.nextInt();
+			
+		// check if number of dice >0
+			if(NumOfDice<0) {
+				System.out.print("the number of dice must be > 0");
+			}
+			else {
+				System.out.println("YOU ROLL THE DICE ");
+				for(int i=0;i<NumOfDice; i++) {
+					int roll=random.nextInt(1,7);
+					printDie(roll);
+					System.out.println("You rolled "+roll);
+					printDie(roll);
+					total +=roll;	
+				}
+				System.out.println(total);
+			}
+		
+		// DESPLAY ASCII OF DICE
+	}
+	static void printDie(int roll) {
+		String Dice1= """
+					 -------
+					|		|
+					|	•	|
+					|		|
+					 -------
+				""";
+		
+		String Dice2= """
+					 -------
+					| •		|
+					|		|
+					|	  •	|
+					 -------
+				""";
+		
+		String Dice3= """
+					 -------
+					| •		|
+					|	•	|
+					|	  •	|
+					 -------
+				""";
+		
+		String Dice4= """
+					 -------
+					| •	  •	|
+					|		|
+					| •	  •	|
+					 -------
+				""";
+		
+		String Dice5= """
+					 -------
+					| •	  •	|
+					|	•	|
+					| •	  •	|
+					 -------
+				""";
+		
+		String Dice6= """
+					 -------
+					| •	• •	|
+					|		|
+					| •	• •	|
+					 -------
+				""";
+	
+		String Dice7= """
+					 -------
+					| •	• •	|
+					|	•	|
+					| •	• •	|
+					 -------
+				""";
+		switch(roll) {
+		case 1->System.out.print(Dice1);
+		case 2 -> System.out.print(Dice2);
+		case 3->System.out.print(Dice3);
+		case 4 -> System.out.print(Dice4);
+		case 5->System.out.print(Dice5);
+		case 6 -> System.out.print(Dice6);
+		case 7 -> System.out.print(Dice7);
+		default -> System.out.print("Invalid choice");
+		}
+		}
+	
+}
