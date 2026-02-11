@@ -1,0 +1,31 @@
+package newPackage;
+import java.util.Arrays;
+public class Main {
+		
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		// Array in JAVA
+		//Exemple:
+		String[] Fruits= {"Orange","Banana","Apple","Coconut"};
+		int[] annes= {2000,2023,2026,2002};
+		// System.out.println(Fruits[1]); l'affichage par index 
+		// int taille=Fruits.length; // pour calculer la taille de tableau (le nbre d'elements)
+		//for(int i=0;i<taille;i++) {
+			// System.out.println(Fruits[i]); }
+		// Autre methode for For:
+		Arrays.sort(Fruits); // pour trier le tableau
+		Arrays.fill(Fruits, "Mangua"); // pour Initialiser le tableau par Mangua  
+		 
+		
+		for(String fruit: Fruits) {
+			System.out.println(fruit);}
+		 
+		 Arrays.sort(annes);
+		 for(int anne: annes) {
+				System.out.println(anne);}
+		
+	
+}
+	
+}
