@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 		//Scanner scanner=new Scanner(System.in);
 		// 2D Array in JAva (Matrix)
+		// Exemple 1:
 		int[] L1= {1,2,3,4};
 		int[] L2= {5,6,7,8};
 		int[] L3= {11,22,33,44};
@@ -18,9 +19,18 @@ public class Main {
 			}
 			System.out.println();	
 		}
-		System.out.println(Matrix[0][0]);
-		System.out.println(Matrix[1][0]);
-		System.out.println(Matrix[2][3]);
+		// Exemple 2:
+		char [][] telephone= {	{'1','2','3'},
+								{'4','5','6'},
+								{'7','8','9'},
+								{'*','0','#'}
+		};
+		for(char[] row:telephone) {
+			for(char num:row) {
+		System.out.print(num +" ");
+			}
+			System.out.println();	
+		}
 		//scanner.close(); 			
 }		
 }
